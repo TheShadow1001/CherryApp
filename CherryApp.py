@@ -50,4 +50,4 @@ if registrarse:
 st.title("")
 
 st.text("_____________________________________________________________________________________________________")
-st.text("Copyright© 2025 CherryApp.app  |  All Rights Reserved  "
+st.text("Copyright© 2025 CherryApp.app  |  All Rights Reserved  ")
