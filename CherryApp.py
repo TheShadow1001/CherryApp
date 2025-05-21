@@ -46,3 +46,8 @@ registrarse = st.button("Registrarme a CherryApp🍒")
 
 if registrarse:
     st.success("Gracias por registrarse a CherryApp!🍒")
+
+st.title("")
+
+st.text("_____________________________________________________________________________________________________")
+st.text("Copyright© 2025 CherryApp.app  |  All Rights Reserved  "
