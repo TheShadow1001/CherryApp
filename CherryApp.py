@@ -1,14 +1,12 @@
 import streamlit as st
 
-col1, col2, col3 = st.columns(3)
-
 st.title("Bienvenido a CherryApp🍒")
 st.text("CherryCorporation🍒")
 st.image("https://dynamic.design.com/preview/logodraft/010ada47-fa29-4cfe-8c74-58ac48f80d6e/image/large.png")
 st.text("Sirve para registrar clientes a una empresa")
 st.text("La app está en desarrollo y puede tener errores.")
 st.text("La app requiere una subscripción para poder usarla.")
-st.text("Pero hay una versión BETA que es esta, asíq ue podrás usarla gratis por ahora.")
+st.text("Pero hay una versión BETA que es esta, así que podrás usarla gratis por ahora.")
 
 st.title("Descripción")
 st.text("Descripción del cliente es cuando un cliente")
@@ -37,7 +35,7 @@ st.title("")
 st.title("Registrarse")
 st.image("https://dynamic.design.com/preview/logodraft/90dca979-d816-4e92-8cbd-e37b79f63f33/image/large.png")
 st.text("No es obligatorio registrarse!")
-st.text("Pero si te registrar tendras muchas ventajas en CherryApp🍒")
+st.text("Pero si te registraS tendras muchas ventajas en CherryApp🍒")
 st.text("¡Mucha suerte!")
 
 entrada1 = st.text_input("Ingrese Su Nombre De Usuario")
