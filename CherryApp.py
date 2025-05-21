@@ -35,7 +35,7 @@ st.title("")
 st.title("Registrarse")
 st.image("https://dynamic.design.com/preview/logodraft/90dca979-d816-4e92-8cbd-e37b79f63f33/image/large.png")
 st.text("No es obligatorio registrarse!")
-st.text("Pero si te registraS tendras muchas ventajas en CherryApp🍒")
+st.text("Pero si te registras tendrás muchas ventajas en CherryApp🍒")
 st.text("¡Mucha suerte!")
 
 entrada1 = st.text_input("Ingrese Su Nombre De Usuario")
