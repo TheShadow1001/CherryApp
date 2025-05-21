@@ -45,7 +45,8 @@ entrada2 = st.text_input("Ingrese Su Correo Eléctronico")
 registrarse = st.button("Registrarme a CherryApp🍒")
 
 if registrarse:
-    st.success("Gracias por registrarse a CherryApp!🍒")
+    st.success("Gracias por registrarse a CherryApp🍒!")
+    st.success(entrada1)
 
 st.title("")
 
