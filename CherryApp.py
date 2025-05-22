@@ -42,14 +42,15 @@ st.title("Registrarme CherryApp🍒")
 
 st.subheader("Formulario CherryApp🍒")
 
-nombre = st.text_input("Nombre del cliente")
-venta = st.text_input("Registro de venta")  
-cédula = st.text_input("Cédula del cliente")
+nombre = st.text_input("Nombre")
+boton = st.button("Registrarme")
+
 
 st.sidebar.title("Registros del cliente")
 st.sidebar.subheader("Aquí sería el apartado de registro")
 nombre = st.sidebar.text_input("Nombre")
 venta = st.sidebar.text_input("Venta")
+cédula = st.sidebar.text_inpu("Cédula")
 
 st.title("")
 
