@@ -51,11 +51,6 @@ st.sidebar.subheader("Aquí sería el apartado de registro")
 nombre = st.sidebar.text_input("Nombre")
 venta = st.sidebar.text_input("Venta")
 
-boton = st.sidebar.button("Crear Registro")
-
-if boton:
-    st.success("Registro Del Cliente Éxitoso!!")
-
 st.title("")
 
 st.text("Copyright© 2025 CherryApp.app  |  All Rights Reserved  ")
