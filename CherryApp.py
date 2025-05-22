@@ -38,15 +38,23 @@ st.text("No es obligatorio registrarse!")
 st.text("Pero si te registras tendrás muchas ventajas en CherryApp🍒")
 st.text("¡Mucha suerte!")
 
-entrada1 = st.text_input("Ingrese Su Nombre De Usuario")
+st.title("Registrarme CherryApp🍒")
 
-entrada2 = st.text_input("Ingrese Su Correo Eléctronico")
+st.subheader("Formulario CherryApp🍒")
 
-registrarse = st.button("Registrarme a CherryApp🍒")
+nombre = st.text_input("Nombre del cliente")
+venta = st.text_input("Registro de venta")  
+cédula = st.text_input("Cédula del cliente")
 
-if registrarse:
-    st.success("Gracias por registrarse a CherryApp🍒!")
-    st.success(entrada1)
+st.sidebar.title("Registros del cliente")
+st.sidebar.subheader("Aquí sería el apartado de registro")
+nombre = st.sidebar.text_input("Nombre")
+venta = st.sidebar.text_input("Venta")
+
+boton = st.sidebar.button("Crear Registro")
+
+if boton:
+    st.success("Registro Del Cliente Éxitoso!!")
 
 st.title("")
 
