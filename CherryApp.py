@@ -2,20 +2,17 @@ import streamlit as st
 
 st.set_page_config(
     page_title="CherryApp",
-    page_icon="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ9lfkPI_p7J-uvjhIAdpBSVMA9HO2WPWccHHF5UvteKUPo_dhxBgt0bcBrYZ-OHKM5WgWnRM07ilgfjuKph3gttQ9RZtnbb4FXFVfGeyeX6TbCPljBq_vrmKmeNLyHMvGnEuTvCK0fGl_rvP65yX6O0bd2sfOp7fOQb5iSQUnWQ63cWERD-1EMXLHzdk/s256/Cherry-removebg-preview.png",
+    page_icon="https://imgs.search.brave.com/6vTnX1yW4AjzIMsAxRvBb-LWCESSEpoxwHSwvRE-37A/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vS2RBX3dz/WFZNWnBXNFdhcnlm/VW9PTkhybEQwcU9w/S2dfbmQ5b1QzenhZ/dy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl6/ZEdGMC9hV010TURB/dWFXTnZibVIxL1ky/c3VZMjl0TDJGemMy/VjAvY3k0d01DOWph/R1Z5Y25rdC9hV052/YmkweU16QjRNalUy/L0xXcGxhbWxyT1hS/M0xuQnUvWnc.jpeg",
     layout="wide"
 )
 
-hide_everything = """
+st.hide_everything = """
     <style>
     {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
     </style>
 """
-st.markdown(hide_everything, unsafe_allow_html=True)
-
-
 
 st.title("Bienvenido a CherryApp🍒")
 st.subheader("CherryCorporation🍒")
@@ -82,7 +79,13 @@ if st.sidebar.button("Crear registro", key="boton2"):
         st.sidebar.success(f"{nombre, venta, cédula}: Registrados con éxito!")
     else:
         st.sidebar.warning("¡Es obligatorio poner un registro del cliente!")
+        
+st.sidebar.title("Productos")
+producto = st.sidebar.text_input("Ingresa un producto que quieras vender")
+st.text("(Ejemplo:Linterna)")
 
-st.title("")
-
-st.text("Copyright© 2025 CherryApp.streamlit.app")
+if st.sidebar.button("Registrar mi producto"):
+    if producto:
+        st.sidebar.success("Producto registrado en la lista!")
+    else:
+        st.sidebar.
