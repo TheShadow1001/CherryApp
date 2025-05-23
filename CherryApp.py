@@ -13,6 +13,7 @@ st.hide_everything = """
     header {visibility: hidden;}
     </style>
 """
+
 st.title("Bienvenido a CherryApp🍒")
 st.subheader("CherryCorporation🍒")
 st.image("https://dynamic.design.com/preview/logodraft/010ada47-fa29-4cfe-8c74-58ac48f80d6e/image/large.png")
@@ -81,10 +82,14 @@ if st.sidebar.button("Crear registro", key="boton2"):
         
 st.sidebar.title("Productos")
 producto = st.sidebar.text_input("Ingresa un producto que quieras vender")
-st.sidebar.text("(Ejemplo:Linterna)")
+st.text("(Ejemplo:Linterna)")
 
 if st.sidebar.button("Registrar mi producto"):
     if producto:
         st.sidebar.success("Producto registrado en la lista!")
     else:
-        st.sidebar.warning("¡No es Obligatorio!")
+        st.sidebar.warning("¡No es obligatorio!")
+
+st.title("")
+
+st.text("Copyright© 2025 CherryApp.streamlit.app")
