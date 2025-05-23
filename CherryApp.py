@@ -80,4 +80,4 @@ if st.sidebar.button("Registrar mi producto"):
     if producto:
         st.sidebar.success("Producto registrado en la lista!")
     else:
-        st.sidebar.
+        st.sidebar.warning("¡No es Obligatorio!
