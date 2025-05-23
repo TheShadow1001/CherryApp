@@ -4,6 +4,7 @@ st.set_page_config(
     page_title="CherryApp",
     page_icon="https://imgs.search.brave.com/6vTnX1yW4AjzIMsAxRvBb-LWCESSEpoxwHSwvRE-37A/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vS2RBX3dz/WFZNWnBXNFdhcnlm/VW9PTkhybEQwcU9w/S2dfbmQ5b1QzenhZ/dy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl6/ZEdGMC9hV010TURB/dWFXTnZibVIxL1ky/c3VZMjl0TDJGemMy/VjAvY3k0d01DOWph/R1Z5Y25rdC9hV052/YmkweU16QjRNalUy/L0xXcGxhbWxyT1hS/M0xuQnUvWnc.jpeg",
     layout="wide"
+    initial_sidebar_state="collapsed"
 )
 
 hide_everything = """
