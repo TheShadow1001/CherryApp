@@ -6,6 +6,14 @@ st.set_page_config(
     layout="wide"
 )
 
+st.hide_everything = """
+    <style>
+    {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+
 st.title("Bienvenido a CherryApp🍒")
 st.subheader("CherryCorporation🍒")
 st.image("https://dynamic.design.com/preview/logodraft/010ada47-fa29-4cfe-8c74-58ac48f80d6e/image/large.png")
@@ -74,7 +82,7 @@ if st.sidebar.button("Crear registro", key="boton2"):
         
 st.sidebar.title("Productos")
 producto = st.sidebar.text_input("Ingresa un producto que quieras vender")
-st.text("(Ejemplo:Linterna)")
+st.sidebar.text("(Ejemplo:Linterna)")
 
 if st.sidebar.button("Registrar mi producto"):
     if producto:
