@@ -8,8 +8,8 @@ st.set_page_config(
 
 st.hide_everything = """
     <style>
-    {visibility: hidden;}
-    footer {visibility: hidden;}
+    {visibility: hidden;},
+    footer {visibility: hidden;},
     header {visibility: hidden;}
     </style>
 """
