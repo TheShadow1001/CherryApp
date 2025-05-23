@@ -8,12 +8,11 @@ st.set_page_config(
 
 st.hide_everything = """
     <style>
-    {visibility: hidden;},
-    footer {visibility: hidden;},
+    {visibility: hidden;}
+    footer {visibility: hidden;}
     header {visibility: hidden;}
     </style>
 """
-st.markdown("hide_everything, unsafe_allow_html=True")
 
 st.title("Bienvenido a CherryApp🍒")
 st.subheader("CherryCorporation🍒")
@@ -83,7 +82,7 @@ if st.sidebar.button("Crear registro", key="boton2"):
         
 st.sidebar.title("Productos")
 producto = st.sidebar.text_input("Ingresa un producto que quieras vender")
-st.text("(Ejemplo:Linterna)")
+st.sidebar.text("(Ejemplo:Linterna)")
 
 if st.sidebar.button("Registrar mi producto"):
     if producto:
