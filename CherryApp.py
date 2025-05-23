@@ -13,7 +13,7 @@ hide_everything = """
     header {visibility: hidden;}
     </style>
 """
-st.markdown("hide_everything, unsafe_allow_html=True")
+st.markdown(hide_everything, unsafe_allow_html=True)
 st.title("Bienvenido a CherryApp🍒")
 st.subheader("CherryCorporation🍒")
 st.image("https://dynamic.design.com/preview/logodraft/010ada47-fa29-4cfe-8c74-58ac48f80d6e/image/large.png")
