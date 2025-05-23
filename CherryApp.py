@@ -16,7 +16,7 @@ hide_everything = """
 """
 col1, col2, col3 = st.columns(3)
 
-    with col1:
+with col1:
         st.text("<-----:Aquí puedes registrar los clientes")
 st.markdown(hide_everything, unsafe_allow_html=True)
 st.title("Bienvenido a CherryApp🍒")
