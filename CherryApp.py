@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="CherryApp",
-    page_icon="🍒",
+    page_icon="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ9lfkPI_p7J-uvjhIAdpBSVMA9HO2WPWccHHF5UvteKUPo_dhxBgt0bcBrYZ-OHKM5WgWnRM07ilgfjuKph3gttQ9RZtnbb4FXFVfGeyeX6TbCPljBq_vrmKmeNLyHMvGnEuTvCK0fGl_rvP65yX6O0bd2sfOp7fOQb5iSQUnWQ63cWERD-1EMXLHzdk/s256/Cherry-removebg-preview.png",
     layout="wide"
 )
 
@@ -58,7 +58,7 @@ st.title("Registrarme CherryApp🍒")
 st.image("https://dynamic.design.com/preview/logodraft/90dca979-d816-4e92-8cbd-e37b79f63f33/image/large.png")
 st.text("No es obligatorio registrarse!")
 st.text("Pero si te registras tendrás muchas ventajas en CherryApp🍒")
-st.text("¡Cómo ser el primero en probar las actualizaciones!")
+st.text("¡Como ser el primero en probar las actualizaciones!")
 
 Usuario = st.text_input("Usuario")
 Nombre = st.text_input("Nombre de empresa")
@@ -79,12 +79,10 @@ cédula = st.sidebar.text_input("Cédula del cliente")
 
 if st.sidebar.button("Crear registro", key="boton2"):
     if nombre and venta and cédula:
-        st.sidebar.success("¡Registro creado con éxito!")
+        st.sidebar.success(f"{nombre, venta, cédula}: Registrados con éxito!")
     else:
         st.sidebar.warning("¡Es obligatorio poner un registro del cliente!")
 
 st.title("")
 
-
-
-st.text("Copyright© 2025 CherryApp.streamlit.app  |  All Rights Reserved  ")
+st.text("Copyright© 2025 CherryApp.streamlit.app")
