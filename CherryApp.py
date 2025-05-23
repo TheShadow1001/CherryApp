@@ -47,7 +47,7 @@ Usuario = st.text_input("Usuario")
 Nombre = st.text_input("Nombre de empresa")
 cédula = st.text_input("Cédula")
 
-if st.button("Registrarme a CherryApp🍒", key="boton1"):
+if st.button("Registrarme a CherryApp✅", key="boton1"):
     if Usuario and Nombre and cédula:
         st.success("Registrado con éxito a CherryApp🍒")
     else:
@@ -75,7 +75,3 @@ if st.sidebar.button("Registrar mi producto"):
         st.sidebar.success("Producto registrado en la lista!")
     else:
         st.sidebar.warning("¡No es obligatorio!")
-
-st.title("")
-
-st.text("Copyright© 2025 CherryApp.streamlit.app")
