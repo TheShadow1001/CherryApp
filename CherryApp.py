@@ -1,82 +1,41 @@
-import streamlit as st
 
-st.set_page_config(
-    page_title="CherryApp",
-    page_icon="https://imgs.search.brave.com/6vTnX1yW4AjzIMsAxRvBb-LWCESSEpoxwHSwvRE-37A/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vS2RBX3dz/WFZNWnBXNFdhcnlm/VW9PTkhybEQwcU9w/S2dfbmQ5b1QzenhZ/dy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl6/ZEdGMC9hV010TURB/dWFXTnZibVIxL1ky/c3VZMjl0TDJGemMy/VjAvY3k0d01DOWph/R1Z5Y25rdC9hV052/YmkweU16QjRNalUy/L0xXcGxhbWxyT1hS/M0xuQnUvWnc.jpeg",
-    layout="wide",
-    initial_sidebar_state="collapsed"
-)
-
-hide_everything = """
-    <style>
-    {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    </style>
-"""
-col1, col2, col3 = st.columns(3)
-
-with col1:
-        st.text("<-----:Aquí puedes registrar los clientes")
-st.markdown(hide_everything, unsafe_allow_html=True)
-st.title("Bienvenido a CherryApp🍒")
-st.subheader("CherryCorporation🍒")
-st.image("https://dynamic.design.com/preview/logodraft/010ada47-fa29-4cfe-8c74-58ac48f80d6e/image/large.png")
-st.write("Sirve para registrar clientes a una empresa")
-st.write("La app está en desarrollo y puede tener errores.")
-st.write("La app requiere una subscripción para poder usarla.")
-st.write("Pero hay una versión BETA que es esta, así que podrás usarla gratis por ahora.")
-st.write("Esta appWeb ayuda a la empresas a registrar los datos de un cliente a una lista.")
-st.write("La página web no es recomendable usarla como uso diario en una empresa, porque puede tener errores")
-st.write("pero dentro de muy poco tiempo la página ya no tendra errores a menudo.")
-
-
-st.title("Sobre mí🤔")
-st.image("https://imgs.search.brave.com/mIT3cPFH1knQmMFLf4IFRn_z_YpXqJZdlp6xJAiw670/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjY5/ODg3MzUwL2VzL2Zv/dG8vZ2VudGUtZGUt/bmVnb2Npb3MtdHJh/YmFqYW5kby1lbi1l/c2NyaXRvcmlvLWRl/LXdpbmRvd3MuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVZi/a2VtS1JGWUJuY1df/SDd0ZEJIakw2eS1u/aUxuYXd0TzhzTTYt/U2Z5UzA9")
-st.text("Soy un creador indie, de juego y de útilidades.")
-st.text("Siempre cualquier error con la página la resolveré, pero la página puede presentar muchos de estos")
-st.text("Pero cualquier errores puedes escribirme por email:WikiDeveloper1@gmail.com")
-st.text("Esta página está en desarrollo, cualquier error critico puedes decirnos!")
-st.text("Si quieres ayudar en la página puedes contactarme!")
-st.text("Y muchas gracias por visitar mí proyecto!")
-st.text("CherryApp es vida, CherryApp es amor")
-st.title("")
-st.title("")
-st.title("Registrarme CherryApp🍒")
-st.image("https://dynamic.design.com/preview/logodraft/90dca979-d816-4e92-8cbd-e37b79f63f33/image/large.png")
-st.text("No es obligatorio registrarse!")
-st.text("Pero si te registras tendrás muchas ventajas en CherryApp🍒")
-st.text("¡Como ser el primero en probar las actualizaciones!")
-
-Usuario = st.text_input("Usuario")
-Nombre = st.text_input("Nombre de empresa")
-cédula = st.text_input("Cédula")
-
-if st.button("Registrarme a CherryApp✅", key="boton1"):
-    if Usuario and Nombre and cédula:
-        st.success("Registrado con éxito a CherryApp🍒")
-    else:
-        st.info("Gracias por su tiempo.")
+        st.write("Grand Theft Auto San Andreas")
+        st.image("https://imgs.search.brave.com/HR9ceY0ONl8kRtx56QiZxOo_GZ-Y3Cit43oRLLTRhPs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMzEx/NTI2NS5qcGc")
+        gtasa = st.button("Descargar Juego", key=1)
         
-st.sidebar.title("Registros del cliente")
-st.sidebar.subheader("Aquí sería el apartado de registro")
-
-nombre = st.sidebar.text_input("Nombre del cliente")
-venta = st.sidebar.text_input("Registro de venta")  
-cédula = st.sidebar.text_input("Cédula del cliente")
-
-if st.sidebar.button("Crear registro", key="boton2"):
-    if nombre and venta and cédula:
-        st.sidebar.success(f"{nombre, venta, cédula}: Registrados con éxito!")
-    else:
-        st.sidebar.warning("¡Es obligatorio poner un registro del cliente!")
+        if gtasa:
+            webbrowser.open("https://download191.uploadhaven.com/1/application/zip/5juqQiHkNt3Vz2Fsa5izUgCaBAd4CkTE7cO47Ux5.zip?key=iFfhqbA79bnrMXWMma0U6w&expire=1748635378&filename=GrandTheftAuto-SanAndreas.zip")
+            st.info("Creditos a Steamunlocked.net")
+    st.title("")
+    with col2:
+        st.write("The Walking Dead Seasion One")
+        st.image("https://imgs.search.brave.com/fmw99wgND03XM3hP5CQVacirgxq8stnK7_v9o0pXmHc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5hcGkucGxheXN0/YXRpb24uY29tL2Nk/bi9VUDIwMjYvQ1VT/QTAxMDE5XzAwL3hG/ckNWN0hTczVxS2h1/SHg4TDBrZ2d5RzY1/WFNIRjhrLnBuZw")
+        twd = st.button("Descargar The Walking Dead Seasion One")
         
-st.sidebar.title("Productos")
-producto = st.sidebar.text_input("Ingresa un producto que quieras vender")
-st.sidebar.text("(Ejemplo:Linterna)")
-
-if st.sidebar.button("Registrar mi producto"):
-    if producto:
-        st.sidebar.success("Producto registrado en la lista!")
-    else:
-        st.sidebar.warning("¡No es obligatorio!")
+        if twd:
+            webbrowser.open("https://download2299.mediafire.com/bm40ucyjzflgowDX94HvP70INn12vDQ5HmQW7RN6AZC_DZgBKZZVm7TmQ80wK7BJzbGBT87Rz8tWYNQbMukoMkds9igFU8wLWZ_nnEG4WFk35qgh4cdFJk_vfM08-JKaFBM_OgezI87RxubhW5LhQXtZ-BXFrZf8rn2l7GFGkcV5Ow/eiu6t8a8esejsd2/The+Walking+Dead+-+Complete+First+Season.7z")
+            st.info("Creditos al Amigo OptiJuegos")
+    st.title("")
+    with col2:
+        st.write("Dead Island The Years Edition")
+        st.image("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIqyfCMS5_oWg2QOOFOvL4Da9s00Hg_lbhmxOpdtmowjOn_9YKojgvoKka9ePNNOZnyZVju0lN2yuneLNKHoEqj8-jVg6FdTV51dzJO6yP0VDkNao3LrivG9FnyXrMtfudvK_xycFKNjutcitBRnx9-MzgDLGg_Tyk7kh5bcuILCsAxKbgRAKpgA6n_uY/w320-h248/DeadIslandLogo.jpg")
+        deadisland = st.button("Descargar Juego", key=2)      
+        if deadisland:
+            webbrowser.open("https://download944.mediafire.com/2duf1k1k0ntgXnH6nXxgieurP--iXaX-17Tt4IeBOW9zzDQUY1SnEbJcq-8vcaJt6YvjSiducrwBFYxc2jR2coaJfAx6MfocHmGBX6hctUOquz2fyyzths6Uc7C6469DUqJ7gU028CYt9evSrJwqpoaRBHtLKVcZpoZisMLVbY4Gvw/87puex12s1f0zy4/DeadIsland_GOTY_By_WikiDev.7z")
+            st.info("¡Gracias por decargar el juego!")
+    st.title("")
+    with col3:
+        st.write("Resident Evil 4(Original)")
+        st.image("https://imgs.search.brave.com/PaCpLhDQqgB7Q9PPOC2oVXW7c0wGXB7RcjADXqK6HXk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cmVzaWRlbnRldmls/LmNvbS9yZTQvYXNz/ZXRzL2ltYWdlcy90/b3BpY3MvYm5yLXZy/bW9kZS1yZS5qcGc")
+        re4 = st.button("Descargar Juego-PC", key=3)
+    
+        if re4:
+            webbrowser.open("https://download947.mediafire.com/vl1iw7w6l5wgQEvYW5ElTx5kLqQWMItheF4upfdhSu5tSOQbMxWmpLt1ccLlkaUpwf_d2J48mB2r5rBgqd3J4luSKiM8pgjcdC08yqW23EN8SVawoBe0ImZfNQyOCJyDHUDNz1b4n-QAJgJ-S7Ln6_cNF-XV3yw8ffN_0bE7QJ5d2g/zr5mi4asudrny57/Resident_Evil_Lite_By_WikiDev.7z")
+      
+    with col1:
+        st.write("Grand Theft Auto 3")
+        st.image("https://imgs.search.brave.com/1O50-6gOkWcsTwXH3rKRo7ZJvsiiC9cTWuRBiTCKt64/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDk4MzE5/MjMuanBn")
+        gta3 = st.button("Descagargar Grand Theft Auto 3")
+    
+        if gta3:
+            webbrowser.open("https://download1648.mediafire.com/pc4odijgtfegTwl5cFON27kKryMW-fUIzGzSd4FQ0tgNwEa0ZoK5nVOvk9WsHO_Gz__gXptWp_KXZgwGsKRJKmJjqTWxIr20FOx_ItZpFIfInUtMu7CqtX6NpTOSJASUZVxKfaWmHV52LUNE_fKCJUHM4PyhtzoIJhrNzaOMzZXXYw/br2of7ckbp4sh4m/Gta3_Portable_By_TheShadow.rar")
