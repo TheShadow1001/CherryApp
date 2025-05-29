@@ -1,4 +1,32 @@
+import streamlit as st
+import webbrowser
 
+st.set_page_config(
+    page_title="CoinGames",
+    page_icon="🧿",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+  )
+
+st.image("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUXlK85A0s4LWZMi9Bw6VjihteEbJW77sj6QjvVyPP14XKsGd8rLXoCSc_lglDEJXlUlVhF5kxPktYls73PEGRqT0E4_wJL82r8-tAQC5qeor6x898OLXcB3vHE60k3ha6c6DYLK_bBCv3jpNSRFpdi_LWrg2gtN19sBkcRpGPoLBbQg7uvNeoTH_dlwY/s600/wmremove-transformed%20(1).png")
+
+hide_everything = """
+    <style>
+    {visibility: hidden;} 
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_everything, unsafe_allow_html=True)
+
+opcion = st.sidebar.radio("Elige una opcion", ["Juegos", "Archivos-Bat", "Apps-Útiles"])
+
+st.markdown(f"## {opcion}")
+
+if opcion == "Juegos":
+    st.title("Juegos-Games")
+    col1, col2, col3 = st.columns(3)
+    with col1:
         st.write("Grand Theft Auto San Andreas")
         st.image("https://imgs.search.brave.com/HR9ceY0ONl8kRtx56QiZxOo_GZ-Y3Cit43oRLLTRhPs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMzEx/NTI2NS5qcGc")
         gtasa = st.button("Descargar Juego", key=1)
